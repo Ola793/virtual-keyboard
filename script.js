@@ -141,28 +141,29 @@ function highlight (event) {
     document.querySelectorAll('.keyboard .keyboard-key').forEach(el => {
         el.classList.remove('active');
     });
-
-    if (event.shiftKey) {
-        if (event.code === 'ShiftLeft') {
-            document.querySelector('.shift-left').classList.add("active"); 
-        } else if (event.code === 'ShiftRight') {
+    
+    switch (event.code) {
+        case 'ShiftLeft':
+            document.querySelector('.shift-left').classList.add("active");
+            break;
+        case 'ShiftRight':
             document.querySelector('.shift-right').classList.add("active");
-        }
-    } else if (event.ctrlKey) {
-        if (event.code === 'ControlLeft') {
+            break;
+        case 'ControlLeft':
             document.querySelector('.ctrl-left').classList.add('active'); 
-        } else if (event.code === 'ControlRight') {
+            break;
+        case 'ControlRight':
             document.querySelector('.ctrl-right').classList.add('active');
-        }
-    } else if (event.altKey) {
-        if (event.code === 'AltLeft') {
-            document.querySelector('.alt-left').classList.add('active'); 
-        } else if (event.code === 'AltRight') {
+            break;  
+        case 'AltLeft':
+            document.querySelector('.alt-left').classList.add('active');
+            break;
+        case 'AltRight':
             document.querySelector('.alt-right').classList.add('active');
-        }
-    } else {
+            break;        
+        default:
             document.querySelector('.keyboard .keyboard-key[data="' + event.keyCode + '"]').classList.add('active');
-        }
+    }
 }
 
 document.addEventListener("keydown", function (event) {
