@@ -7,7 +7,7 @@
 }
 
 .text-area {
-    min-width: 55%;
+    width: 690px;
     height: 200px;
 }
 
@@ -17,15 +17,18 @@
     border: 2px solid black;
     padding: 5px;
     margin: 20px;
+    background-color: rgb(245, 222, 236);
 }
 
 .keyboard-key {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
     height: 30px;
     border: 1px solid black;
+    border-radius: 4px;
     margin: 3px;
     padding: 3px;
     float: left;
@@ -37,10 +40,10 @@
 
 .keyboard-key span:first-child {
     display: block;
-    position: relative;
+    position: absolute;
     top: 0;
-    left: 0;
-    font-size: 0.5rem;
+    left: 0.1rem;
+    font-size: 0.7rem;
 }
 
 .clearfix {
@@ -49,7 +52,8 @@
     clear: both;
 }
 
-.ctrl,
+.ctrl-left,
+.ctrl-right,
 .delete,
 .tab {
     width: 40px;
@@ -57,7 +61,8 @@
 
 .capslock,
 .enter,
-.shift {
+.shift-left,
+.shift-right {
     width: 85px;
 }
 
@@ -70,6 +75,6 @@
 }
 
 .active {
-    background-color: blueviolet;
+    background-color: rgb(211, 197, 225);
     transition: ease-in-out;
 }
