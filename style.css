@@ -6,15 +6,20 @@
     align-items: center;
 }
 
+.text-area {
+    min-width: 55%;
+    height: 200px;
+}
+
 .keyboard {
     display: block;
-    width: 50%;
+    width: 680px;
     border: 2px solid black;
     padding: 5px;
     margin: 20px;
 }
 
-.k-key {
+.keyboard-key {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +31,16 @@
     float: left;
 }
 
-.k-key span:first-child {
+.keyboard-key:hover {
+    cursor: pointer;
+}
+
+.keyboard-key span:first-child {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
     font-size: 0.5rem;
-    /* vertical-align: super; */
 }
 
 .clearfix {
@@ -55,4 +67,9 @@
 
 .backspace {
     width: 95px;
+}
+
+.active {
+    background-color: blueviolet;
+    transition: ease-in-out;
 }
