@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.keyboard {
+    display: block;
+    width: 50%;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px;
+}
+
+.k-key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+
+.k-key span:first-child {
+    font-size: 0.5rem;
+    /* vertical-align: super; */
+}
+
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.ctrl,
+.delete,
+.tab {
+    width: 40px;
+}
+
+.capslock,
+.enter,
+.shift {
+    width: 85px;
+}
+
+.space {
+    width: 240px;
+}
+
+.backspace {
+    width: 95px;
+}
