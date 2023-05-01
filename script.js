@@ -144,10 +144,10 @@ function highlight (event) {
     
     switch (event.code) {
         case 'ShiftLeft':
-            document.querySelector('.shift-left').classList.add("active");
+            document.querySelector('.shift-left').classList.add('active');
             break;
         case 'ShiftRight':
-            document.querySelector('.shift-right').classList.add("active");
+            document.querySelector('.shift-right').classList.add('active');
             break;
         case 'ControlLeft':
             document.querySelector('.ctrl-left').classList.add('active'); 
