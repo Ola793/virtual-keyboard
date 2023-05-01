@@ -1,0 +1,80 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-area {
+    width: 690px;
+    height: 200px;
+}
+
+.keyboard {
+    display: block;
+    width: 680px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(245, 222, 236);
+}
+
+.keyboard-key {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+
+.keyboard-key:hover {
+    cursor: pointer;
+}
+
+.keyboard-key span:first-child {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0.1rem;
+    font-size: 0.7rem;
+}
+
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.ctrl-left,
+.ctrl-right,
+.delete,
+.tab {
+    width: 40px;
+}
+
+.capslock,
+.enter,
+.shift-left,
+.shift-right {
+    width: 85px;
+}
+
+.space {
+    width: 240px;
+}
+
+.backspace {
+    width: 95px;
+}
+
+.active {
+    background-color: rgb(211, 197, 225);
+    transition: ease-in-out;
+}
